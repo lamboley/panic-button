@@ -1,0 +1,32 @@
+{
+
+  "manifest_version": 2,
+  "name": "Panic button",
+  "version": "0.0.1",
+
+  "applications": {
+    "gecko": {
+      "id": "panic-button@lamboley"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "commands": {
+    "panic-buton-hide-current": {
+      "suggested_key": {
+        "default": "F1"
+      },
+      "description": "Hide the current tab and put focus to the first tab"
+    }
+  },
+
+  "permissions": [
+    "menus",
+    "tabs",
+    "tabHide"
+  ]
+
+}
